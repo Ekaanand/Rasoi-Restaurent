@@ -1,0 +1,170 @@
+:root{
+    --red:#EA5455;
+    --green:#f3e7e7;
+    --yellow:#E4DCCF;
+    --white:#080b0b;
+}
+
+body,h2{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.landing{
+ /*background-image: url('../media/pexels-jessica-lewis-creative-858094\ \(1\).jpg');*/
+ /*background-image: url('../media/pexels-angele-j-128402.jpg');*/
+ background-image: url('../media/pexels-chan-walrus-958545.jpg');
+
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color:var(--white);
+
+}
+
+header a{
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color:var(--yellow);
+    min-width: 120px;
+}
+header{
+    display:flex;
+    flex-wrap:wrap;
+    row-gap:1em;
+    padding: 1em;
+
+}
+
+#logo{
+    flex:3;
+    font-size: 1.25em;
+    min-width:260px;
+}
+
+nav{
+    flex:2;
+    display: flex;
+}
+
+nav a{
+    flex:1;
+}
+
+nav a:hover{
+    color:var(--green)
+}
+header h2 i,nav a i{
+    margin-right: .5em; 
+}
+
+.maintext{
+     display: flex;
+     flex-direction: column;
+     height: 50vh;
+     justify-content: center;
+     padding: 2em;
+}
+
+.tagline1{
+    color:var(--red);
+    font-size: 2.5em;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-weight: bolder;
+}
+
+
+.tagline2{
+    color:var(--yellow);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-weight: bolder;
+}
+.callus{
+    color: #f3e7e7;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-weight: bolder;
+}
+
+.maintext div{
+    margin-top:.75em ;
+}
+
+.maintext button{
+    width: 10em;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    
+    background-color: var(--green);
+    color: var(--white);
+    border:1px solid var(--green);
+
+
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background: linear-gradient(to right,rgb(121, 117, 117),rgb(55, 54, 54) );
+    color: white;
+}
+
+#menuheading,#locheading{
+    background: linear-gradient(to right,rgb(121, 117, 117),rgb(55, 54, 54) );
+    font-size:2.5em;
+    color:var(--red);
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu th{
+    color:var(--green);
+    font-size: 1.8em;
+}
+
+table{
+    width:100%;
+    padding: 1em;
+}
+
+.menu tr{
+    display:flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+
+.menu td:nth-child(1){
+    flex:1;
+    justify-self: left;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+}
+
+.maincourse{
+    grid-row:span 2;
+}
+.locations{
+    background: linear-gradient(to right,rgb(121, 117, 117),rgb(55, 54, 54) );
+    color: var(--white);
+    display:flex;
+}
+
+.locations h2{
+    color: var(--green);
+    margin-bottom: .8em;
+}
+.locations div{
+    flex:1;
+    padding:1em;
+
+    min-width : 220px;
+}
+footer{
+    background-color: black;
+    color: var(--red);
+    
+}
